@@ -310,6 +310,17 @@
         "ingredients": ["Espresso", "Milk", "Chocolate Syrup", "Ice"],
         "flavors": ["Chocolate", "Vanilla", "Caramel"],
         "price": "Ksh 480"
+      },
+      {
+        "id": 31,
+        "category": "Coffee Drinks",
+        "name": "https://images.unsplash.com/photo-1604313803931-169516ec5498?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEljZWQlMjBIYXplbG51dCUyMExhdHRlfGVufDB8fDB8fHww",
+        "image": "Image URL Here",
+        "recipe": "A delightful iced coffee drink made with espresso, cold milk, and a hint of hazelnut flavor. Enjoy the cool and nutty experience, perfect for a hot day.",
+        "likes": 680,
+        "ingredients": ["Espresso", "Cold Milk", "Hazelnut Syrup", "Ice"],
+        "flavors": ["Hazelnut", "Classic", "Vanilla"],
+        "price": "Ksh 420"
       }
     ]
   }
