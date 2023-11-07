@@ -1,7 +1,9 @@
+
 import React from "react";
 import TopNav from "./Components/TopNav";
 import NavBar from "./Components/NavBar";
 import NavLogo from "./Components/NavLogo";
+import Login from './Login';
 import NavItem from "./Components/NavItem";
 import { BsCart4 } from "react-icons/bs";
 import { IoSearchOutline } from "react-icons/io5";
@@ -19,8 +21,10 @@ function App() {
           <NavItem icon={<VscMenu />} />
         </>
       </NavBar>
+ <Login/>
     </>
   );
+
 }
 
 export default App;
