@@ -1,0 +1,142 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "category": "Coffee Beans",
+        "name": "Arabica",
+        "image": "https://cdn.accentuate.io/557828603966/1677786404629/Our-Coffee-Ethiopia-tabletop-production-916W-578-2x.jpg?v=1692634350716",
+        "recipe": "To make a cup of Arabica coffee, grind Arabica coffee beans to a medium consistency. Use a drip coffee maker or a pour-over setup. Add 1-2 tablespoons of coffee grounds per 6 ounces of water. Brew and enjoy!",
+        "likes": 500,
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 900"
+      },
+      {
+        "id": 2,
+        "category": "Coffee Beans",
+        "name": "Robusta",
+        "image": "https://cdn.accentuate.io/557598801982/1669041600989/Our-Coffee-India-tabletop-production-916W-578-2x.jpg?v=1692633085107",
+        "recipe": "For a strong Robusta coffee, grind Robusta coffee beans to a fine consistency. Use an espresso machine or a moka pot. Brew a shot of espresso and savor the bold and robust flavor.",
+        "likes": 300,
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 800"
+      },
+      {
+        "id": 3,
+        "category": "Coffee Beans",
+        "name": "Colombian Supremo",
+        "image": "https://cdn.accentuate.io/557828505662/1677787430299/Our-Coffee-Columbia-tabletop-production-916W-578-2x.jpg?v=1692633458691",
+        "recipe": "To prepare a cup of Colombian Supremo coffee, use a drip coffee maker or a French press. Grind the beans to a medium consistency, and brew using hot water. Enjoy its well-rounded flavor.",
+        "likes": 600,
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 1,000"
+      },
+      {
+        "id": 4,
+        "category": "Coffee Beans",
+        "name": "Sumatra Mandheling",
+        "image": "https://cdn.accentuate.io/557598179390/1669034218066/Our-Coffee-Costa-Rica-tabletop-production-916W-578-2x.jpg?v=1692634512028",
+        "recipe": "For a robust Sumatra Mandheling coffee, use a French press. Coarsely grind the beans and steep in hot water for a few minutes. Press the plunger and savor its rich and spicy flavor.",
+        "likes": 400,
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 1,200"
+      },
+      {
+        "id": 5,
+        "category": "Coffee Beans",
+        "name": "Kenyan AA",
+        "image": "https://www.coffeeam.com/cdn/shop/products/23896652874c4e48f43124ad6f1f34f6_512x512.jpg?v=1591204262",
+        "recipe": "To experience the flavors of Kenyan AA coffee, use a pour-over method. Grind the beans to a medium consistency and carefully pour hot water over them. Enjoy the vibrant and fruity taste.",
+        "likes": 550,
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 1,100"
+      },
+      {
+        "id": 6,
+        "category": "Coffee Beans",
+        "name": "Hawaiian Kona",
+        "image": "https://www.coffeeam.com/cdn/shop/products/ea967b5f0022eebdcdbf8d7521abd0df_512x512.jpg?v=1591203917",
+        "recipe": "For a taste of Hawaiian Kona, use a drip coffee maker. Grind the beans to a medium consistency and brew with hot water. Savor the unique flavors of Hawaii.",
+        "likes": 750,
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 1,499"
+      },
+      {
+        "id": 7,
+        "category": "Coffee Drinks",
+        "name": "Latte",
+        "image": "https://images.unsplash.com/photo-1503481766315-7a586b20f66d?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A classic coffee drink made with espresso and steamed milk. It offers a balanced and creamy flavor.",
+        "likes": 900,
+        "ingredients": ["Espresso", "Steamed Milk"],
+        "flavors": ["Vanilla", "Caramel", "Hazelnut"],
+        "price": "Ksh 350"
+      },
+      {
+        "id": 8,
+        "category": "Coffee Drinks",
+        "name": "Mocha",
+        "image": "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A delightful coffee drink made with espresso, steamed milk, and chocolate. It's perfect for those who love a combination of coffee and cocoa flavors.",
+        "likes": 750,
+        "ingredients": ["Espresso", "Steamed Milk", "Chocolate"],
+        "flavors": ["Caramel", "Vanilla", "Hazelnut"],
+        "price": "Ksh 449"
+      },
+      {
+        "id": 9,
+        "category": "Coffee Drinks",
+        "name": "Caramel Macchiato",
+        "image": "https://images.unsplash.com/photo-1620360289921-85cd7365c2e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A sweet and indulgent coffee drink with espresso, caramel, and frothy milk. It's a popular choice for those with a sweet tooth.",
+        "likes": 800,
+        "ingredients": ["Espresso", "Caramel Syrup", "Steamed Milk"],
+        "flavors": ["Caramel", "Vanilla", "Hazelnut"],
+        "price": "Ksh 479"
+      },
+      {
+        "id": 10,
+        "category": "Coffee Drinks",
+        "name": "Espresso Shot",
+        "image": "https://images.unsplash.com/photo-1589455758301-aae2e7288b38?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A concentrated shot of pure espresso, perfect for those who enjoy the intense and bold flavor of coffee. Served in a small cup.",
+        "likes": 600,
+        "ingredients": ["Espresso"],
+        "flavors": ["Caramel", "Vanilla", "Hazelnut"],
+        "price": "Ksh 299"
+      },
+      {
+        "id": 11,
+        "category": "Coffee Drinks",
+        "name": "Iced Coffee",
+        "image": "https://images.unsplash.com/photo-1623400518712-640c747bd047?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A refreshing and chilled coffee drink, made with cold-brewed coffee, ice, and a touch of sweetness. Perfect for hot summer days.",
+        "likes": 720,
+        "ingredients": ["Cold-Brewed Coffee", "Ice", "Sweetener"],
+        "flavors": ["Caramel", "Vanilla", "Hazelnut"],
+        "price": "Ksh 379"
+      },
+      {
+        "id": 12,
+        "category": "Coffee Drinks",
+        "name": "Cappuccino",
+        "image": "https://images.unsplash.com/photo-1517958911667-09c05f6cd698?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A classic Italian coffee drink made with espresso, steamed milk, and frothed milk foam. It offers a rich and creamy taste.",
+        "likes": 650,
+        "ingredients": ["Espresso", "Steamed Milk", "Frothed Milk Foam"],
+        "flavors": ["Caramel", "Vanilla", "Hazelnut"],
+        "price": "Ksh 429"
+      },
+      {
+        "id": 13,
+        "category": "Coffee Drinks",
+        "name": "Iced Latte",
+        "image": "https://images.unsplash.com/photo-1527678357412-ef45dfbd9ecc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "recipe": "A refreshing coffee drink made with espresso and cold milk, served over ice. It's perfect for a hot day.",
+        "likes": 720,
+        "ingredients": ["Espresso", "Cold Milk", "Ice"],
+        "flavors": ["Caramel", "Vanilla", "Hazelnut"],
+        "price": "Ksh 459"
+      }
+    ]
+  }
+  
