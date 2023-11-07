@@ -8,6 +8,7 @@ import NavItem from "./Components/NavItem";
 import { BsCart4 } from "react-icons/bs";
 import { IoSearchOutline } from "react-icons/io5";
 import { VscMenu } from "react-icons/vsc";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         </>
       </NavBar>
  <Login/>
+       <Footer/>
+
     </>
   );
 
