@@ -1,8 +1,8 @@
 import React from "react";
-import TopNav from "./Components/TopNav";
-import NavBar from "./Components/NavBar";
-import NavLogo from "./Components/NavLogo";
-import NavItem from "./Components/NavItem";
+import TopNav from "./NavComponents/TopNav";
+import NavBar from "./NavComponents/NavBar";
+import NavLogo from "./NavComponents/NavLogo";
+import NavItem from "./NavComponents/NavItem";
 import { BsCart4 } from "react-icons/bs";
 import { IoSearchOutline } from "react-icons/io5";
 import { VscMenu } from "react-icons/vsc";
