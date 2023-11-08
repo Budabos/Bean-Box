@@ -20,18 +20,18 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-amber-950 px-16 py-20 text-white">
-      <div className="flex items-center justify-between">
+    <div className="tw-bg-amber-950 tw-px-16 tw-py-20 tw-text-white">
+      <div className="tw-flex tw-items-center tw-justify-between">
         <Logo />
-        <ul className="flex items-center text-[16px] leading-[24px] font-semibold gap-8">
+        <ul className="tw-flex tw-items-center tw-text-[16px] tw-leading-[24px] tw-font-semibold tw-gap-8">
           {links.map(({text, value}) => (
-            <li key={text} className="cursor-pointer hover:text-neutral-400">{text}</li>
+            <li key={text} className="tw-cursor-pointer tw-hover:tw-text-neutral-400">{text}</li>
           ))}
         </ul>
         <SocialLinks />
       </div>
-      <hr className="mt-20" />
-      <div className="mt-8 flex items-center justify-center gap-6">
+      <hr className="tw-mt-20" />
+      <div className="tw-mt-8 tw-flex tw-items-center tw-justify-center tw-gap-6">
         <span>© {year} Bean Box. All rights reserved.</span>
       </div>
     </div>
