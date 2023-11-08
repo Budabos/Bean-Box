@@ -10,6 +10,7 @@ Welcome to Bean Box, the ultimate destination for coffee lovers. Whether you're 
 - [Features](#features)
 - [Getting Started] (#getting-started)
 - [Installation](#installation)
+- [Author](#author)
 - [Usage](#usage)
 - [Collaborators](#Collaborators)
 - [Contributing](#contributing)t
@@ -67,6 +68,9 @@ Your Bean Box coffee website should now be running locally and accessible in you
 ## Usage
 
 Once  the project set up locally, you can use it for various purposes, such as development, testing, or exploration. Detailed usage instructions can be found in the project documentation and code comments. Feel free to explore the codebase and experiment with the features.
+
+## Author
+Caroline Akinyi Opiyo ("https://github.com/Budabos") Email: opiyocaroline20@gmail.com
 
 ## Collaborators
 Caroline Akinyi Opiyo ("https://github.com/Budabos")
