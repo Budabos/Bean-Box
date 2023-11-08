@@ -1,32 +1,32 @@
 import React from "react";
 
-const SortBar = ({ sortBy, setSortBy }) => {
+const FilterBar = ({ filterBy, setFilterBy }) => {
   const options = [
     {
       name: "Default",
       value: "default",
     },
     {
-      name: "Name",
-      value: "name",
+      name: "Beans",
+      value: "Coffee Beans",
     },
     {
-      name: "Category",
-      value: "category",
+      name: "Drinks",
+      value: "Coffee Drinks",
     },
   ];
 
   return (
     <div className="tw-flex tw-items-center tw-gap-5">
-      <h3>Sort by: </h3>
+      <h3>Filter by: </h3>
       <div class="btn-group" role="group" aria-label="Basic example">
         {options.map(({ name, value }) => (
           <button
             type="button"
             class={`btn btn-outline-primary ${
-              sortBy === value ? "active" : ""
+              filterBy === value ? "active" : ""
             }`}
-            onClick={() => setSortBy(value)}
+            onClick={() => setFilterBy(value)}
           >
             {name}
           </button>
@@ -36,4 +36,4 @@ const SortBar = ({ sortBy, setSortBy }) => {
   );
 };
 
-export default SortBar;
+export default FilterBar;

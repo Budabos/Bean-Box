@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import ProductsList from "./ProductsList";
+import FilterBar from "./FilterBar";
+import SortBar from "./SortBar";
 
 const Products = ({ products, setProducts }) => {
+  const [sortBy, setSortBy] = useState("default");
+  const [filterBy, setFilterBy] = useState("default");
+
   const [formData, setFormData] = useState({
     name: "",
     recipe: "",
@@ -51,10 +56,26 @@ const Products = ({ products, setProducts }) => {
     });
   };
 
+  const filteredProducts = products.filter((product) => {
+    if(filterBy === 'default') return true;
+
+    return product.category === filterBy
+  })
+
+  filteredProducts.sort((a, b) => {
+    if (sortBy === "default") return true;
+
+    return a[sortBy] > b[sortBy] ? 1 : -1;
+  });
+
   return (
     <div>
       <h2>All Products</h2>
-      <ProductsList products={products} setProducts={setProducts}/>
+      <div className="tw-flex tw-items-center tw-justify-center tw-gap-20 tw-py-9">
+        <FilterBar filterBy={filterBy} setFilterBy={setFilterBy}/>
+        <SortBar sortBy={sortBy} setSortBy={setSortBy} />
+      </div>
+      <ProductsList products={filteredProducts} setProducts={setProducts} />
       <form>
         <div className="form-group">
           <label for="name">Name</label>

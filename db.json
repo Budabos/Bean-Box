@@ -20,7 +20,7 @@
       "name": "Robusta",
       "image": "https://cdn.accentuate.io/557598801982/1669041600989/Our-Coffee-India-tabletop-production-916W-578-2x.jpg?v=1692633085107",
       "recipe": "For a strong Robusta coffee, grind Robusta coffee beans to a fine consistency. Use an espresso machine or a moka pot. Brew a shot of espresso and savor the bold and robust flavor.",
-      "likes": 300,
+      "likes": 301,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -502,7 +502,7 @@
       "flavor": "test flavor",
       "price": "1500",
       "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "beans",
+      "category": "Coffee Drinks",
       "id": 32
     }
   ]
