@@ -74,9 +74,13 @@ Caroline Akinyi Opiyo ("https://github.com/Budabos") Email: opiyocaroline20@gmai
 
 ## Collaborators
 Caroline Akinyi Opiyo ("https://github.com/Budabos")
+
 IanGichane ("https://github.com/IanGichane")
+
 John Mbela ("https://github.com/jmbeba")
+
 Ruth M. ("https://github.com/RuthM-K")
+
 Edwin Rukuno ("https://github.com/erukuno")
 
 

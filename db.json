@@ -34,7 +34,7 @@
       "name": "Colombian Supremo",
       "image": "https://cdn.accentuate.io/557828505662/1677787430299/Our-Coffee-Columbia-tabletop-production-916W-578-2x.jpg?v=1692633458691",
       "recipe": "To prepare a cup of Colombian Supremo coffee, use a drip coffee maker or a French press. Grind the beans to a medium consistency, and brew using hot water. Enjoy its well-rounded flavor.",
-      "likes": 600,
+      "likes": 608,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -48,7 +48,7 @@
       "name": "Sumatra Mandheling",
       "image": "https://cdn.accentuate.io/557598179390/1669034218066/Our-Coffee-Costa-Rica-tabletop-production-916W-578-2x.jpg?v=1692634512028",
       "recipe": "For a robust Sumatra Mandheling coffee, use a French press. Coarsely grind the beans and steep in hot water for a few minutes. Press the plunger and savor its rich and spicy flavor.",
-      "likes": 400,
+      "likes": 413,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -220,7 +220,7 @@
       "name": "Brazilian Santos",
       "image": "https://www.coffeeam.com/cdn/shop/products/437e0201ea0638344ac423953f15de1f_320x320.jpg?v=1591204645",
       "recipe": "Recipe Here",
-      "likes": 400,
+      "likes": 401,
       "flavors": [
         "Vanilla",
         "Classic",
@@ -419,7 +419,7 @@
       "name": "Brazilian Santos",
       "image": "https://www.coffeeam.com/cdn/shop/products/437e0201ea0638344ac423953f15de1f_320x320.jpg?v=1591204645",
       "recipe": "To experience the rich flavors of Brazilian Santos coffee, grind the beans to a medium consistency and use a French press. Brew and savor its nutty and chocolatey notes.",
-      "likes": 680,
+      "likes": 684,
       "flavors": [
         "Nutty",
         "Chocolate",
@@ -507,4 +507,3 @@
     }
   ]
 }
-    
