@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 function ProductsList({ products }) {
   return (
@@ -14,7 +15,8 @@ function ProductsList({ products }) {
             {product.flavours}<br /> <br />
             {product.price}
           </Card.Text>
-        </Card.Body>
+            </Card.Body>
+            <Button variant="success">Add to cart</Button>{' '}
       </Card>
     ))
   );
