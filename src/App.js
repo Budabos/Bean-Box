@@ -11,7 +11,6 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import NavItem from "./components/NavItem";
 import NavLogo from "./components/NavLogo";
-import Newsletter from "./components/Newsletter";
 import Products from "./components/Products";
 import TopNav from "./components/TopNav";
 

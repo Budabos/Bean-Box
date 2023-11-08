@@ -7,7 +7,6 @@ const Home = ({products}) => {
 
   //Get the first 8 products
   const renderedProducts = products.slice(0,8);
-  console.log(renderedProducts)
 
   return (
     <>
