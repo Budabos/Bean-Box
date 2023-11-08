@@ -8,13 +8,11 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Products from "./components/Products";
 import NavBar from "./components/navbar/NavBar";
 import NavItem from "./components/navbar/NavItem";
 import NavLogo from "./components/navbar/NavLogo";
-import Products from "./components/Products";
-import TopNav from "./components/navbar/TopNav";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Hero from "./components/Hero";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -26,7 +24,6 @@ function App() {
   }, []);
   return (
     <div>
-    
       <NavBar>
         <>
           <NavLogo />
@@ -35,14 +32,20 @@ function App() {
           <NavItem icon={<VscMenu />} />
         </>
       </NavBar>
-      <Hero/>
       <Routes>
-        <Route path="/" element={<Home products={products}/>} />
-        <Route path="/products" element={<Products products={products} setProducts={setProducts}/>} />
+        <Route
+          path="/"
+          element={<Home products={products} setProducts={setProducts} />}
+        />
+        <Route
+          path="/products"
+          element={<Products products={products} setProducts={setProducts} />}
+        />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
+      <Toaster/>
     </div>
   );
 }

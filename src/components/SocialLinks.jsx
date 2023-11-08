@@ -3,12 +3,12 @@ import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const SocialLinks = () => {
   return (
-    <div className="flex items-center gap-3">
-      <Facebook fill="white" color="transparent" />
-      <Instagram />
-      <Twitter fill="white" color="transparent" />
-      <Linkedin fill="white" color="transparent" />
-      <Youtube fill="white" color="#431407" />
+    <div className="tw-flex tw-items-center tw-gap-3">
+      <Facebook className="tw-cursor-pointer" fill="black" color="transparent" />
+      <Instagram className="tw-cursor-pointer" />
+      <Twitter className="tw-cursor-pointer" fill="black" color="transparent" />
+      <Linkedin className="tw-cursor-pointer" fill="black" color="transparent" />
+      <Youtube className="tw-cursor-pointer" fill="black" color="white" />
     </div>
   );
 };
