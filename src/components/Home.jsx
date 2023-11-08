@@ -4,11 +4,16 @@ import Newsletter from "./Newsletter";
 import ProductsList from "./ProductsList";
 
 const Home = ({products}) => {
+
+  //Get the first 8 products
+  const renderedProducts = products.slice(0,8);
+  console.log(renderedProducts)
+
   return (
     <>
       <Login />
       <h2>Products Lists</h2>
-      <ProductsList products={products} />
+      <ProductsList products={renderedProducts} />
       <Newsletter />
     </>
   );
