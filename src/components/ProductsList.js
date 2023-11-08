@@ -1,24 +1,18 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
-function ProductsList({ products }) {
+import { Link } from "react-router-dom";
+import ProductItem from "./ProductItem";
+
+function ProductsList({ products, setProducts }) {
+
   return (
-    products.map((product) => (
-      <Card key={product.id} style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={product.image} />
-        <Card.Body>
-          <Card.Title>{product.name}</Card.Title>
-          <Card.Text>
-            {product.category}<br /> <br />
-            {product.recipe}<br /> <br />
-            {product.likes}<br /> <br />
-            {product.flavours}<br /> <br />
-            {product.price}
-          </Card.Text>
-            </Card.Body>
-            <Button variant="success">Add to cart</Button>{' '}
-      </Card>
-    ))
+    <div className="tw-grid tw-grid-cols-4 tw-space-y-2">
+      {products.map((product) => (
+        <ProductItem key={product.id} product={product} products={products} setProducts={setProducts}/>
+      ))}
+      <Link to={"/products"}>
+        <button>View all</button>
+      </Link>
+    </div>
   );
 }
 
