@@ -13,6 +13,8 @@ import NavItem from "./components/NavItem";
 import NavLogo from "./components/NavLogo";
 import Products from "./components/Products";
 import TopNav from "./components/TopNav";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Hero from "./components/Hero";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,6 +35,7 @@ function App() {
           <NavItem icon={<VscMenu />} />
         </>
       </NavBar>
+      <Hero/>
       <Routes>
         <Route path="/" element={<Home products={products}/>} />
         <Route path="/products" element={<Products products={products} setProducts={setProducts}/>} />
