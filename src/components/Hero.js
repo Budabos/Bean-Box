@@ -31,21 +31,31 @@ function Hero() {
     },
   ];
 
-  return <section className="Hero-details">
-    <section className='Hero-details'>
-      <Carousel>
-        {heroData.map(hero => (
-          <Carousel.Item key={hero.id}>
-            <img src={hero.image} alt={'Slide' + hero.id} text="First slide" />
-            <Carousel.Caption>
-              <h1>{hero.title}</h1>
-              <p>{hero.description}</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </section>
-  </section>;
+  return (
+    <section className="Hero-details">
+      <section className="Hero-details">
+        <Carousel>
+          {heroData.map((hero) => (
+            <Carousel.Item key={hero.id} className="tw-relative">
+              <img
+                src={hero.image}
+                alt={"Slide" + hero.id}
+                text="First slide"
+                className="tw-w-full tw-h-[76vh] tw-aspect-auto"
+              />
+              <Carousel.Caption className="tw-flex tw-absolute tw-top-1/2 tw-translate-y-[-50%] tw-flex-col tw-items-start">
+                <h1 className="tw-text-[64px]">{hero.title}</h1>
+                <p className="tw-text-[21px] tw-text-left">
+                  {hero.description}
+                </p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+            
+      </section>
+    </section>
+  );
 }
 
 export default Hero;

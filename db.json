@@ -6,7 +6,7 @@
       "name": "Arabica",
       "image": "https://cdn.accentuate.io/557828603966/1677786404629/Our-Coffee-Ethiopia-tabletop-production-916W-578-2x.jpg?v=1692634350716",
       "recipe": "To make a cup of Arabica coffee, grind Arabica coffee beans to a medium consistency. Use a drip coffee maker or a pour-over setup. Add 1-2 tablespoons of coffee grounds per 6 ounces of water. Brew and enjoy!",
-      "likes": 500,
+      "likes": 501,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -20,7 +20,7 @@
       "name": "Robusta",
       "image": "https://cdn.accentuate.io/557598801982/1669041600989/Our-Coffee-India-tabletop-production-916W-578-2x.jpg?v=1692633085107",
       "recipe": "For a strong Robusta coffee, grind Robusta coffee beans to a fine consistency. Use an espresso machine or a moka pot. Brew a shot of espresso and savor the bold and robust flavor.",
-      "likes": 301,
+      "likes": 305,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -34,7 +34,7 @@
       "name": "Colombian Supremo",
       "image": "https://cdn.accentuate.io/557828505662/1677787430299/Our-Coffee-Columbia-tabletop-production-916W-578-2x.jpg?v=1692633458691",
       "recipe": "To prepare a cup of Colombian Supremo coffee, use a drip coffee maker or a French press. Grind the beans to a medium consistency, and brew using hot water. Enjoy its well-rounded flavor.",
-      "likes": 600,
+      "likes": 601,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -62,7 +62,7 @@
       "name": "Kenyan AA",
       "image": "https://www.coffeeam.com/cdn/shop/products/23896652874c4e48f43124ad6f1f34f6_512x512.jpg?v=1591204262",
       "recipe": "To experience the flavors of Kenyan AA coffee, use a pour-over method. Grind the beans to a medium consistency and carefully pour hot water over them. Enjoy the vibrant and fruity taste.",
-      "likes": 550,
+      "likes": 551,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -108,7 +108,7 @@
       "name": "Mocha",
       "image": "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "recipe": "A delightful coffee drink made with espresso, steamed milk, and chocolate. It's perfect for those who love a combination of coffee and cocoa flavors.",
-      "likes": 750,
+      "likes": 757,
       "ingredients": [
         "Espresso",
         "Steamed Milk",
@@ -507,4 +507,3 @@
     }
   ]
 }
-    
