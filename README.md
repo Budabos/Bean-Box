@@ -1,120 +1,96 @@
-Phase 2 Project Guidelines
-GitHub RepoCreate New Issue
-Learning Goals
-Build a React single page application from scratch
-Apply your knowledge of components, props and state management
-Incorporate client-side routing
-Use data from an API
-Introduction
-Now that you've learned the fundamentals of React, it's time to practice and expand your skills by making a React project from scratch!
+## Title
+ Bean Box Coffee Website
 
-This assignment is open-ended when it comes to the actual content. You are free to create whatever you'd like, as long as it incorporates the requirements listed in these instructions.
 
-Requirements
-You must make a single page application (only one index.html file) using create-react-app
-Your app should use at least 5 components in a way that keeps your code well organized
-There should be at least 3 client-side routes using react-routerLinks to an external site.
-Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
-You should keep your json-server data simple: avoid nested data and associations. You'll learn how to work with more complex data in the next two phases. Focus on the frontend for this project.
-Stretch Goals
-Once you have met the minimum requirements, feel free to explore! These are only the basic requirements — you're free to add on as much stuff as you'd like.
+Welcome to Bean Box, the ultimate destination for coffee lovers. Whether you're a coffee enthusiast, a roaster, or a developer looking to contribute, this repository contains everything you need to know about our coffee website.
 
-Some ideas for stretch goals:
+## Table of Contents
 
-Incorporate data from an external API. Use this list of APIsLinks to an external site. if you need some inspiration!
-Add some styling: you're encouraged to write your CSS from scratch, either by using styled-componentsLinks to an external site. or writing CSS files and using id/className to style your elements. You can also incorporate a UI framework (like react-bootstrapLinks to an external site., semantic-uiLinks to an external site. material-uiLinks to an external site.) if you prefer.
-Setup
-For this project, you will need two separate repositories: one for your frontend and one for your backend. This will make it easier to deploy your project later, should you choose to do so.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started] (#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Collaborators](#Collaborators)
+- [Contributing](#contributing)t
+- [License](#license)
 
-Frontend Setup
-Use create-react-app to generate starter code for your your project. Follow the instructions on the create-react-appLinks to an external site. site to get started.
+## Introduction
 
-Backend Setup
-You can use this json-server templateLinks to an external site. to generate your backend code. Using this template will make it easier to deploy your backend later on.
+Bean Box is a coffee e-commerce website dedicated to providing high-quality, curated coffee beans from around the world. Our mission is to connect coffee lovers with artisanal roasters and deliver exceptional coffee experiences right to your doorstep. This repository is the foundation of our online presence.
 
-If you prefer, instead of using the template, you can create a db.json file with a structure in the root of your project that looks like this:
+## Features
 
-{
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
-Then, assuming you have json-server installed globally, you can run this command to run the server:
+- **Browse Coffee Selection**: 
+Explore our carefully curated selection of coffee beans from various regions.
 
- json-server --watch db.json
-Whatever top-level keys exist in your db.json file will determine the routes available. In the example above, since we have a key of toys pointing to an array of toy objects, json-server will generate the following routes:
+- **User Accounts**: 
+Create an account to save your favorite beans, place orders, and manage your subscriptions.
 
-GET /toys
-POST /toys
-GET /toys/:id
-PATCH /toys/:id
-DELETE /toys/:id
-You can consult the json-server docsLinks to an external site. for more information.
+- **Order and Subscription**:
+ Purchase single bags or set up a subscription for recurring deliveries.
 
-Deploying
-When your project is complete, you are encouraged to deploy it! You'll need to deploy your frontend and backend repos to their own standalone servers.
+- **Reviews and Ratings**: 
+Read reviews from other coffee lovers and leave your own.
 
-For your backend, if you are using json-server, you will need a service capable of running a Node.js server. We recommend using HerokuLinks to an external site..
+- **Responsive Design**: 
+Enjoy a seamless experience on desktop, tablet, and mobile devices.
 
-For your frontend, we recommend using NetlifyLinks to an external site.; however, there are a number of free services you can use if you'd like to explore alternatives.
+- **Secure Transactions**:
+ Your payment information is encrypted and securely processed.
 
-Deploying Tips & Tricks
-Routing
-If you're using React Router, you'll also need to set up a _redirects file as specified here:
+## Getting Started
 
-Netlify RedirectsLinks to an external site.
-Your redirects file should be placed in the public folder. It look like this:
+These instructions will help you get a copy of our project up and running on your local machine for development and testing purposes. See the [Installation](#installation) section for notes on how to deploy the project on a live system.
 
-/*    /index.html   200
-Environment Variables
-When working on your app, it's useful to consider which environment you're working on:
+## Installation
 
-Development: when working locally
-Test: when running tests
-Production: when deployed to server
-You'll likely have some variables that change depending on what environment you're working in. For example, after deploying your site to production, you won't be able to access your backend on localhost anymore.
+To get a local copy of the project, follow these steps:
 
-To handle these kind of environment variables, we can use .env files.
+1. Clone this repository to your local machine:
 
-create-react-app has some tools for working with .env files that you can read about here:
+   ```bash
+   git clone https://github.com/yourusername/bean-box.git
 
-Custom Environment VariablesLinks to an external site.
 
-You can make a .env.development and .env.production file to keep track of separate environment variables. Note that these files should be in the root of your application directory (not in /src). For example, you might set up a .env.development file with your local development server URL:
+##	Install the required dependencies:
+cd bean-box 
+npm install
 
-REACT_APP_API_URL=http://localhost:4000
-And a .env.production file with your deployed backend URL:
+Set up your environment variables. You'll need to provide details for database connections, API keys, and other configurations. Create a .env file in the project root and populate it with the necessary values.
 
-REACT_APP_API_URL=https://my-awesome-project.herokuapp.com
-To use these environment variables in your code, you can access them at process.env.REACT_APP_VARIABLE_NAME:
+## Development Start the server:
+npm start 
 
-fetch(`${process.env.REACT_APP_API_URL}/cats`)
-  .then((r) => r.json())
-  .then(setCats);
-What Happens When I Deploy?
-Glad you asked! Deploying your site involves taking the code that lives on your machine, and setting it up to run on someone else's machine.
+Your Bean Box coffee website should now be running locally and accessible in your web browser
 
-As you'll recall, our frontend applications are a type of app known as a Single Page Application. What that means is that there is only one HTML file, along with a handful of JavaScript, CSS, fonts, images, and other static assets. So when our site is deployed, the main thing we need is a server to host all of those files and let other people from around the world access those files with their browsers.
+## Usage
 
-static file server
+Once  the project set up locally, you can use it for various purposes, such as development, testing, or exploration. Detailed usage instructions can be found in the project documentation and code comments. Feel free to explore the codebase and experiment with the features.
 
-In order to generate those files, create-react-app comes with a special build script that uses another tool, webpack, to take all of our JavaScript, CSS, and other assets from the src directory and optimize them by bundling (merging files together) and minifying (shortening the lines of code) so that the files load as fast as possible.
+## Collaborators
+Caroline Akinyi Opiyo ("https://github.com/Budabos")
+IanGichane ("https://github.com/IanGichane")
+John Mbela ("https://github.com/jmbeba")
+Ruth M. ("https://github.com/RuthM-K")
+Edwin Rukuno ("https://github.com/erukuno")
 
-webpack bundle
 
-You can try this out on your own by running npm run build. This will create a new directory with your bundled and minified source code!
 
-When you upload your project to Netlify, this build script will run automatically on Netlify's server, so that they can host the content for you. Any time you update your code and push the changes up to Netlify, the build script will run again and create a new bundle on the server.
+## Contributing
 
-Netlify can be configured to use Continuous Deployment, which typically works by connecting your Git repository with Netlify's build process. Then, any time you push up changes to your main branch, your deployed site will automatically update! This makes it very easy to add features even after you've deployed.
+We welcome contributions from the open-source community to enhance and improve Bean Box. If you're interested in contributing, please follow our Contributing Guidelines and adhere to our Code of Conduct. Your contributions can help make the Bean Box experience even more exceptional.
+
+## License
+## License (" MIT License")
+Bean Box is an open-source project licensed under the MIT License. This means that you can use, modify, and distribute the project while providing appropriate attribution and adhering to the license terms outlined in the LICENSE file.
+
+
+
+At Bean Box, we are passionate about coffee and are committed to delivering the finest coffee beans to your doorstep. We hope you enjoy your journey through our platform and discover new coffee flavors that excite your taste buds. Thank you for joining us in celebrating the world of coffee! t
+
+
+
+
+
+

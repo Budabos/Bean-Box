@@ -18,7 +18,7 @@ import TopNav from "./components/TopNav";
 function App() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("http://localhost:8000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
