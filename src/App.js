@@ -9,6 +9,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import { VscMenu } from "react-icons/vsc";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <NavItem icon={<VscMenu />} />
         </>
       </NavBar>
+      <Hero/>
       <Login />
       <Newsletter/>
       <Footer />
