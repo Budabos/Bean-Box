@@ -8,11 +8,11 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import NavItem from "./components/NavItem";
-import NavLogo from "./components/NavLogo";
+import NavBar from "./components/navbar/NavBar";
+import NavItem from "./components/navbar/NavItem";
+import NavLogo from "./components/navbar/NavLogo";
 import Products from "./components/Products";
-import TopNav from "./components/TopNav";
+import TopNav from "./components/navbar/TopNav";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hero from "./components/Hero";
 
@@ -26,7 +26,7 @@ function App() {
   }, []);
   return (
     <div>
-      <TopNav />
+    
       <NavBar>
         <>
           <NavLogo />
