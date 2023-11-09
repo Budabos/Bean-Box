@@ -35,10 +35,12 @@ const ProductItem = ({ product, setProducts, products }) => {
       .catch((err) => console.log(err));
   };
 
+  console.log(product.flavors)
+
   const Flavors = () => {
     return (
       <div>
-        {product.flavors.map((flavor) => (
+        {product?.flavors.map((flavor) => (
           <span>{flavor},</span>
         ))}
       </div>
@@ -46,13 +48,13 @@ const ProductItem = ({ product, setProducts, products }) => {
   };
 
   return (
-    <Card key={product.id} className="tw-w-[23rem]">
+    <Card key={product.id} className="col-3 p-0">
       <Card.Img
         variant="top"
         className="tw-w-full tw-h-[300px]"
         src={product.image}
       />
-      <Card.Body>
+      <Card.Body className="p-4">
         <Card.Title className="tw-text-center">{product.name}</Card.Title>
         <Card.Text>
           <div className="tw-text-center">{product.category}</div>
