@@ -4,11 +4,11 @@ import { BsCart4 } from "react-icons/bs";
 import { IoSearchOutline } from "react-icons/io5";
 import { VscMenu } from "react-icons/vsc";
 import { Route, Routes } from "react-router-dom";
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Products from "./components/Products";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import Footer from "./sections/Footer";
+import Home from "./sections/Home";
+import Products from "./pages/Products";
 import NavBar from "./components/navbar/NavBar";
 import NavItem from "./components/navbar/NavItem";
 import NavLogo from "./components/navbar/NavLogo";
@@ -45,7 +45,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
-      <Toaster/>
+      <Toaster />
     </div>
   );
 }

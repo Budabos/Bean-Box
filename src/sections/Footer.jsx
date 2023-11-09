@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "./Logo";
-import SocialLinks from "./SocialLinks";
+import Logo from "../components/Logo";
+import SocialLinks from "../components/SocialLinks";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -26,10 +26,8 @@ const Footer = () => {
         <Logo />
         <ul className="tw-flex tw-items-center tw-text-[16px] tw-leading-[24px] tw-font-semibold tw-gap-8">
           {links.map(({ text, value }) => (
-            <Link  key={value} to={value}>
-              <li
-                className="tw-cursor-pointer tw-text-black tw-no-underline tw-capitalize tw-hover:tw-text-black-400"
-              >
+            <Link key={value} to={value}>
+              <li className="tw-cursor-pointer tw-text-black tw-no-underline tw-capitalize tw-hover:tw-text-black-400">
                 {text}
               </li>
             </Link>

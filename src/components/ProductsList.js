@@ -5,7 +5,7 @@ import ProductItem from "./ProductItem";
 function ProductsList({ products, setProducts }) {
 
   return (
-    <div className="tw-px-8 tw-mb-10 tw-grid tw-grid-cols-3 tw-space-y-10">
+    <div className="tw-px-8 tw-mb-10 row row-gap-4 column-gap-4 justify-content-center ">
       {products.map((product) => (
         <ProductItem
           key={product.id}

@@ -108,7 +108,7 @@
       "name": "Mocha",
       "image": "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "recipe": "A delightful coffee drink made with espresso, steamed milk, and chocolate. It's perfect for those who love a combination of coffee and cocoa flavors.",
-      "likes": 757,
+      "likes": 758,
       "ingredients": [
         "Espresso",
         "Steamed Milk",
@@ -494,16 +494,6 @@
         "Vanilla"
       ],
       "price": "Ksh 420"
-    },
-    {
-      "name": "Test drink",
-      "recipe": "Test recipe",
-      "likes": 211,
-      "flavor": "test flavor",
-      "price": "1500",
-      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "Coffee Drinks",
-      "id": 32
     }
   ]
 }
