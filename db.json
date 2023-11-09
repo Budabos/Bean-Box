@@ -20,7 +20,7 @@
       "name": "Robusta",
       "image": "https://cdn.accentuate.io/557598801982/1669041600989/Our-Coffee-India-tabletop-production-916W-578-2x.jpg?v=1692633085107",
       "recipe": "For a strong Robusta coffee, grind Robusta coffee beans to a fine consistency. Use an espresso machine or a moka pot. Brew a shot of espresso and savor the bold and robust flavor.",
-      "likes": 301,
+      "likes": 305,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -34,7 +34,7 @@
       "name": "Colombian Supremo",
       "image": "https://cdn.accentuate.io/557828505662/1677787430299/Our-Coffee-Columbia-tabletop-production-916W-578-2x.jpg?v=1692633458691",
       "recipe": "To prepare a cup of Colombian Supremo coffee, use a drip coffee maker or a French press. Grind the beans to a medium consistency, and brew using hot water. Enjoy its well-rounded flavor.",
-      "likes": 600,
+      "likes": 608,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -48,7 +48,7 @@
       "name": "Sumatra Mandheling",
       "image": "https://cdn.accentuate.io/557598179390/1669034218066/Our-Coffee-Costa-Rica-tabletop-production-916W-578-2x.jpg?v=1692634512028",
       "recipe": "For a robust Sumatra Mandheling coffee, use a French press. Coarsely grind the beans and steep in hot water for a few minutes. Press the plunger and savor its rich and spicy flavor.",
-      "likes": 400,
+      "likes": 413,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -62,7 +62,7 @@
       "name": "Kenyan AA",
       "image": "https://www.coffeeam.com/cdn/shop/products/23896652874c4e48f43124ad6f1f34f6_512x512.jpg?v=1591204262",
       "recipe": "To experience the flavors of Kenyan AA coffee, use a pour-over method. Grind the beans to a medium consistency and carefully pour hot water over them. Enjoy the vibrant and fruity taste.",
-      "likes": 550,
+      "likes": 551,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -108,7 +108,7 @@
       "name": "Mocha",
       "image": "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "recipe": "A delightful coffee drink made with espresso, steamed milk, and chocolate. It's perfect for those who love a combination of coffee and cocoa flavors.",
-      "likes": 750,
+      "likes": 758,
       "ingredients": [
         "Espresso",
         "Steamed Milk",
@@ -220,7 +220,7 @@
       "name": "Brazilian Santos",
       "image": "https://www.coffeeam.com/cdn/shop/products/437e0201ea0638344ac423953f15de1f_320x320.jpg?v=1591204645",
       "recipe": "Recipe Here",
-      "likes": 400,
+      "likes": 401,
       "flavors": [
         "Vanilla",
         "Classic",
@@ -419,7 +419,7 @@
       "name": "Brazilian Santos",
       "image": "https://www.coffeeam.com/cdn/shop/products/437e0201ea0638344ac423953f15de1f_320x320.jpg?v=1591204645",
       "recipe": "To experience the rich flavors of Brazilian Santos coffee, grind the beans to a medium consistency and use a French press. Brew and savor its nutty and chocolatey notes.",
-      "likes": 680,
+      "likes": 684,
       "flavors": [
         "Nutty",
         "Chocolate",
@@ -494,16 +494,6 @@
         "Vanilla"
       ],
       "price": "Ksh 420"
-    },
-    {
-      "name": "Test drink",
-      "recipe": "Test recipe",
-      "likes": 211,
-      "flavor": "test flavor",
-      "price": "1500",
-      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "category": "Coffee Drinks",
-      "id": 32
     }
   ]
 }

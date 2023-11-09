@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
+import React from "react";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { BsFillSuitHeartFill } from "react-icons/bs";
+import toast from "react-hot-toast";
 
 const ProductItem = ({ product, setProducts, products }) => {
   const handleLike = () => {
     const updatedLikes = Number(product.likes) + 1;
+
     fetch(`http://localhost:8000/products/${product.id}`, {
       method: "PATCH",
       headers: {
@@ -25,30 +28,56 @@ const ProductItem = ({ product, setProducts, products }) => {
             return item;
           });
           setProducts(updatedProducts);
+
+          toast.success(`${product.name} liked`);
         }
       })
       .catch((err) => console.log(err));
   };
 
+  console.log(product.flavors)
+
+  const Flavors = () => {
+    return (
+      <div>
+        {product?.flavors.map((flavor) => (
+          <span>{flavor},</span>
+        ))}
+      </div>
+    );
+  };
+
   return (
-    <Card key={product.id} style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={product.image} />
-      <Card.Body>
-        <Card.Title>{product.name}</Card.Title>
+    <Card key={product.id} className="col-3 p-0">
+      <Card.Img
+        variant="top"
+        className="tw-w-full tw-h-[300px]"
+        src={product.image}
+      />
+      <Card.Body className="p-4">
+        <Card.Title className="tw-text-center">{product.name}</Card.Title>
         <Card.Text>
-          {product.category}
+          <div className="tw-text-center">{product.category}</div>
           <br />
           {product.recipe}
           <br />
-          <button onClick={handleLike}>Like</button>
-          {product.likes}
-          {/* <br /> <br /> */}
-          {product.flavours}
-          <br />
-          {product.price}
+          <div className="tw-flex tw-items-center tw-gap-2 tw-my-2 tw-font-semibold">
+            <span>Flavors available:</span> <Flavors />
+          </div>
+          <div className="tw-flex tw-flex-row-reverse tw-items-center tw-justify-between">
+            <BsFillSuitHeartFill
+              className="tw-cursor-pointer"
+              size={21}
+              onClick={handleLike}
+              color="red"
+            />
+            <span>{product.price}</span>
+          </div>
         </Card.Text>
+        <div>
+          <Button variant="success">Add to cart</Button>
+        </div>
       </Card.Body>
-      <Button variant="success">Add to cart</Button>{" "}
     </Card>
   );
 };
