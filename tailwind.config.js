@@ -2,12 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "edu": "Edu TAS Beginner",
+      },
+    },
   },
   plugins: [],
-  prefix:'tw-',
-  corePlugins:{
-    preflight:false
-  }
+  prefix: "tw-",
+  corePlugins: {
+    preflight: false,
+  },
 };
 
