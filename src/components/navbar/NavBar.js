@@ -18,6 +18,7 @@ const NavBar = () => {
             {[
               <NavLinkItem
                 products="products"
+                redirect={'/products'}
                 links={
                   <>
                     <a href="#">Coffee beans</a>
@@ -25,9 +26,9 @@ const NavBar = () => {
                   </>
                 }
               />,
-              <NavLinkItem products="Store" />,
-              <NavLinkItem products="About us" />,
-              <NavLinkItem products="Stories" />,
+              <NavLinkItem products="Store" redirect={'/products'}/>,
+              <NavLinkItem products="About us" redirect={'/about-us'}/>,
+              <NavLinkItem products="Stories" redirect={'/about-us'}/>,
             ].map((item) => (
               <li key={`link-${item}`}>
                 <a href={`#${item}`}>{item}</a>

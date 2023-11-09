@@ -1,8 +1,12 @@
-const NavLinkItem = ({ products, links }) => {
+import { Link } from "react-router-dom";
+
+const NavLinkItem = ({ products, links, redirect }) => {
   return (
     <a href="#news">
       <div class="dropdown">
-        <button class="dropbtn">{products}</button>
+        <Link to={redirect}>
+          <button class="dropbtn">{products}</button>
+        </Link>
         <div class="dropdown-content">{links}</div>
       </div>
     </a>
