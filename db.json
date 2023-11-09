@@ -28,7 +28,7 @@
         "recipe": "To prepare a cup of Colombian Supremo coffee, use a drip coffee maker or a French press. Grind the beans to a medium consistency, and brew using hot water. Enjoy its well-rounded flavor.",
         "likes": 600,
         "flavors": ["Vanilla", "Caramel", "Hazelnut"],
-        "price": "Ksh 1,000"
+        "price": "Ksh 1000"
       },
       {
         "id": 4,
@@ -49,7 +49,7 @@
         "recipe": "For a robust Sumatra Mandheling coffee, use a French press. Coarsely grind the beans and steep in hot water for a few minutes. Press the plunger and savor its rich and spicy flavor.",
         "likes": 400,
         "flavors": ["Vanilla", "Caramel", "Hazelnut"],
-        "price": "Ksh 1,200"
+        "price": "Ksh 1200"
       },
       {
         "id": 6,
@@ -70,7 +70,7 @@
         "recipe": "To experience the flavors of Kenyan AA coffee, use a pour-over method. Grind the beans to a medium consistency and carefully pour hot water over them. Enjoy the vibrant and fruity taste.",
         "likes": 550,
         "flavors": ["Vanilla", "Caramel", "Hazelnut"],
-        "price": "Ksh 1,100"
+        "price": "Ksh 1100"
       },
       {
         "id": 8,
@@ -91,7 +91,7 @@
         "recipe": "For a taste of Hawaiian Kona, use a drip coffee maker. Grind the beans to a medium consistency and brew with hot water. Savor the unique flavors of Hawaii.",
         "likes": 750,
         "flavors": ["Vanilla", "Caramel", "Hazelnut"],
-        "price": "Ksh 1,499"
+        "price": "Ksh 1499"
       },
       
       {
