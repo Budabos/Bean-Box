@@ -6,7 +6,7 @@
       "name": "Arabica",
       "image": "https://cdn.accentuate.io/557828603966/1677786404629/Our-Coffee-Ethiopia-tabletop-production-916W-578-2x.jpg?v=1692634350716",
       "recipe": "To make a cup of Arabica coffee, grind Arabica coffee beans to a medium consistency. Use a drip coffee maker or a pour-over setup. Add 1-2 tablespoons of coffee grounds per 6 ounces of water. Brew and enjoy!",
-      "likes": 500,
+      "likes": 501,
       "flavors": [
         "Vanilla",
         "Caramel",
@@ -507,4 +507,3 @@
     }
   ]
 }
-    
