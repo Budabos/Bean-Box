@@ -1,19 +1,48 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
 import { Button, Modal } from "react-bootstrap";
-import {BsTrash} from 'react-icons/bs'
+import { BsTrash } from "react-icons/bs";
 
 const NavItem = ({ icon }) => {
-  const { cart } = useContext(CartContext);
+  const { cart, setCart } = useContext(CartContext);
+  console.log(cart);
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-    const subTotal = cart.length
-      ? cart.map((item) => item.totalPrice).reduce((curr, acc) => curr + acc)
-      : "";
+  const subTotal = cart.length
+    ? cart.map((item) => item.totalPrice).reduce((curr, acc) => curr + acc)
+    : "";
+
+  const changeQuantity = (id, e) => {
+    console.log(e.target.value);
+
+    if (e.target.value < 1) return;
+
+    const updatedItems = cart.map((item) => {
+      if (item.id === id) {
+        const price = Number(item.price.split(" ")[1]);
+        const updatedTotalPrice = Number(e.target.value) * price;
+        return {
+          ...item,
+          quantity: Number(e.target.value),
+          totalPrice: updatedTotalPrice,
+        };
+      }
+
+      return item;
+    });
+
+    setCart(updatedItems);
+  };
+
+  const deleteCartItem = (id) => {
+    const updatedItems = cart.filter((item) => item.id !== id);
+
+    setCart(updatedItems);
+  };
 
   return (
     <li className={`nav-icon-item `}>
@@ -38,12 +67,18 @@ const NavItem = ({ icon }) => {
                         className="tw-h-[50px] tw-w-[50px] tw-rounded-md"
                         src={item.image}
                       />
-                      <div className="tw-grid tw-grid-cols-3 tw-flex-1">
+                      <div className="tw-grid tw-grid-cols-3 tw-flex-1 tw-items-center">
                         <span className="tw-ml-[17px]">{item.name}</span>
                         <span className="tw-ml-[20px]">{item.price}</span>
-                        <span className="tw-ml-[20px]">x{item.quantity}</span>
+                        {/* <span className="tw-ml-[20px]">x{item.quantity}</span> */}
+                        <input
+                          className="tw-ml-[20px] tw-w-[70px]"
+                          type="number"
+                          value={item.quantity}
+                          onChange={(e) => changeQuantity(item.id, e)}
+                        />
                       </div>
-                      <BsTrash className="tw-cursor-pointer" color="red" />
+                      <BsTrash onClick={() => deleteCartItem(item.id)} className="tw-cursor-pointer" color="red" />
                     </div>
                   ))
                 ) : (
