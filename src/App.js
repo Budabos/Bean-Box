@@ -14,6 +14,7 @@ import NavItem from "./components/navbar/NavItem";
 import NavLogo from "./components/navbar/NavLogo";
 import { Toaster } from "react-hot-toast";
 
+
 function App() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
