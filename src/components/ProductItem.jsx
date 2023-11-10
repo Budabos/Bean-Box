@@ -48,7 +48,7 @@ const ProductItem = ({ product, setProducts, products }) => {
     return (
       <div>
         {product?.flavors.map((flavor) => (
-          <span>{flavor},</span>
+          <span key={flavor}>{flavor},</span>
         ))}
       </div>
     );

@@ -6,9 +6,10 @@ const CartContext = createContext();
 //Create the Provider from the context instance
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [searchText, setSearchText] = useState('');
 
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartContext.Provider value={{ cart, setCart, searchText, setSearchText }}>
       {children}
     </CartContext.Provider>
   );
