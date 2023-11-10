@@ -54,7 +54,9 @@ const NavItem = ({ icon }) => {
         )}
         {icon.type.name === "BsCart4" ? (
           <>
-            <div onClick={handleShow}>{icon}</div>
+            <div className="tw-w-[25px]" onClick={handleShow}>
+              {icon}
+            </div>
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
                 <Modal.Title>Cart</Modal.Title>
@@ -78,7 +80,11 @@ const NavItem = ({ icon }) => {
                           onChange={(e) => changeQuantity(item.id, e)}
                         />
                       </div>
-                      <BsTrash onClick={() => deleteCartItem(item.id)} className="tw-cursor-pointer" color="red" />
+                      <BsTrash
+                        onClick={() => deleteCartItem(item.id)}
+                        className="tw-cursor-pointer"
+                        color="red"
+                      />
                     </div>
                   ))
                 ) : (

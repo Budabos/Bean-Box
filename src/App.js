@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./sections/Footer";
-import Home from "./sections/Home";
+import Home from "./pages/Home";
 import Products from "./pages/Products";
 import NavBar from "./components/navbar/NavBar";
 import NavItem from "./components/navbar/NavItem";
