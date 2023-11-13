@@ -1,0 +1,32 @@
+.about-img {
+  background-image: url(../images/woman-2346309_1920.jpg);
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  height: 250px;
+}
+.vision-img {
+  background-image: url(../images/coffee-3076962_1280.jpg);
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.mission-img {
+  background-image: url(../images/coffee-3923897_1280.jpg);
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+h3 {
+  font-size: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #ce8147;
+}
+h5 {
+  font-size: 1.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
