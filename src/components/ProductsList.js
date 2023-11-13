@@ -2,14 +2,15 @@ import { Link } from "react-router-dom";
 import ProductItem from "./ProductItem";
 import { useContext } from "react";
 import { CartContext } from "../context/cartContext";
-
+// ProductsList Component
 function ProductsList({ products, setProducts }) {
   const { searchText } = useContext(CartContext);
 
+// Filter products based on the search tex
   const renderedProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchText.toLowerCase())
   );
-
+// JSX for rendering the ProductsList component
   return (
     <div className="tw-pl-8 tw-mb-10 row row-gap-4 column-gap-4 justify-content-center ">
       {renderedProducts.map((product) => (
