@@ -15,15 +15,18 @@ import NavLogo from "./components/navbar/NavLogo";
 import { Toaster } from "react-hot-toast";
 import Logo from "./components/Logo";
 
-
+// Main App component
 function App() {
+  // State to hold the products data
   const [products, setProducts] = useState([]);
+  // Fetching products data from the server on component mount
   useEffect(() => {
     fetch("http://localhost:8000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
   }, []);
+  // Rendering the main structure of the app
   return (
     <div>
       <NavBar>
@@ -34,6 +37,7 @@ function App() {
           <NavItem icon={<VscMenu />} />
         </>
       </NavBar>
+      {/* Routing for different pages */}
       <Routes>
         <Route
           path="/"
@@ -46,10 +50,12 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
+       {/* Footer component */}
       <Footer />
+      {/* Notification toaster for displaying messages */}
       <Toaster />
     </div>
   );
 }
-
+// Exporting the App component
 export default App;
