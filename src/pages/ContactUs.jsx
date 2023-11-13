@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BiMap, BiPhone, BiEnvelope } from "react-icons/bi";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -30,33 +31,42 @@ const ContactUs = () => {
   return (
     <Fragment>
       <section>
-        <div>
+        <div className="text-center">
           <h3>CONTACT US</h3>
         </div>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div>
-                <h5>Get in touch with us</h5>
+                <h5 className="text-center">Get in touch with us</h5>
+                <p>
+                  We would love to hear from you! Whether you have a burning
+                  question,a suggestion or want to share your favorite coffee
+                  moments;
+                  <br />
+                  getting in touch with us is super easy!
+                </p>
                 <br />
                 <address>
                   <strong>
-                    Address:
-                    <br />
-                    e.students@moringaschool.com
+                    <BiMap /> Address:
                   </strong>
                   <br />
+                  P.O.BOX 97-00100 along Tom Mboya road
+                  <br />
                   <strong>
+                    <BiPhone />
                     Phone No:
-                    <br />
-                    +23354577789
                   </strong>
                   <br />
+                  +254354577789
+                  <br />
                   <strong>
+                    <BiEnvelope />
                     Email:
-                    <br />
-                    software.student@moringaschool.com
                   </strong>
+                  <br />
+                  software.student@moringaschool.com
                 </address>
               </div>
             </div>
@@ -65,9 +75,7 @@ const ContactUs = () => {
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="mb-3">
-                      <label htmlFor="name" className="form-label">
-                        Name
-                      </label>
+                      <label htmlFor="name" className="form-label"></label>
                       <input
                         type="text"
                         placeholder="Your name"
@@ -85,9 +93,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="mb-3">
-                      <label htmlFor="number" className="form-label">
-                        Number
-                      </label>
+                      <label htmlFor="number" className="form-label"></label>
                       <input
                         type="number"
                         placeholder="Your number"
@@ -103,9 +109,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="mb-3">
-                      <label htmlFor="email" className="form-label">
-                        Email
-                      </label>
+                      <label htmlFor="email" className="form-label"></label>
                       <input
                         type="email"
                         placeholder="Your email"
@@ -121,9 +125,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="mb-3">
-                      <label htmlFor="subject" className="form-label">
-                        Subject
-                      </label>
+                      <label htmlFor="subject" className="form-label"></label>
                       <input
                         type="text"
                         className="form-control"
@@ -134,9 +136,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-lg-12 col-md-12 col-sm-12">
                     <div className="mb-3">
-                      <label htmlFor="Textarea" className="form-label">
-                        Textarea
-                      </label>
+                      <label htmlFor="Textarea" className="form-label"></label>
                       <textarea
                         className="form-control"
                         id="Textarea"
@@ -146,7 +146,10 @@ const ContactUs = () => {
                   </div>
                   <div className="col-12">
                     <div className="sendbtn">
-                      <button type="submit" className="btn btn-primary">
+                      <button
+                        type="submit"
+                        className="btn btn-success text-center"
+                      >
                         Submit form
                       </button>
                     </div>
