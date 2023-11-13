@@ -1,8 +1,7 @@
 import React from "react";
-import Login from "../components/Login";
-import Newsletter from "./Newsletter";
 import ProductsList from "../components/ProductsList";
-import Hero from "./Hero";
+import Hero from "../sections/Hero";
+import Newsletter from "../sections/Newsletter";
 
 const Home = ({ products, setProducts }) => {
   //Get the first 8 products

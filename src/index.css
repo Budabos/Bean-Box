@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  overflow-x: hidden;
+} */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -133,8 +137,8 @@ a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.top-nav{
-    float: none;
+.top-nav {
+  float: none;
   color: var(--text-color);
   padding: 0;
   margin: 0;
@@ -172,7 +176,7 @@ input {
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -183,4 +187,3 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-

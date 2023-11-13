@@ -1,5 +1,6 @@
 import NavItem from "./NavItem";
 import NavLinkItem from "./NavLinkItem";
+import SearchBar from "./SearchBar";
 import TopNav from "./TopNav";
 import { BsCart4 } from "react-icons/bs";
 import { IoSearchOutline } from "react-icons/io5";
@@ -11,13 +12,14 @@ const NavBar = () => {
       <TopNav />
       <nav className="navbar">
         <div className="app__navbar-logo">
-          <>bean box</>
+          bean box
         </div>
         <div>
           <ul className="app__navbar-links">
             {[
               <NavLinkItem
                 products="products"
+                redirect={'/products'}
                 links={
                   <>
                     <a href="#">Coffee beans</a>
@@ -25,18 +27,19 @@ const NavBar = () => {
                   </>
                 }
               />,
-              <NavLinkItem products="Store" />,
-              <NavLinkItem products="About us" />,
-              <NavLinkItem products="Stories" />,
-            ].map((item) => (
-              <li key={`link-${item}`}>
-                <a href={`#${item}`}>{item}</a>
+              <NavLinkItem products="Store" redirect={'/products'}/>,
+              <NavLinkItem products="About us" redirect={'/about-us'}/>,
+              <NavLinkItem products="Stories" redirect={'/about-us'}/>,
+            ].map((item, index) => (
+              <li key={`link-${index}`}>
+                <a href={`#${index}`}>{item}</a>
               </li>
             ))}
           </ul>
         </div>
+        <SearchBar/>
         <div className="lst ">
-          <ul className="navbar-lst ">
+          <ul className="navbar-lst">
             <NavItem icon={<IoSearchOutline />} />
             <NavItem icon={<BsCart4 />} />
             <NavItem icon={<VscMenu />} />

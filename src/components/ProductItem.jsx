@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import toast from "react-hot-toast";
+import { CartContext } from "../context/cartContext";
 
 const ProductItem = ({ product, setProducts, products }) => {
+  const { cart, setCart } = useContext(CartContext);
+
+  const price = Number(product.price.split(" ")[1]);
+
+  const isItemInCart = cart.find((item) => item.id === product.id);
+
+  // console.log("cart", cart);
+
   const handleLike = () => {
     const updatedLikes = Number(product.likes) + 1;
 
@@ -35,20 +44,53 @@ const ProductItem = ({ product, setProducts, products }) => {
       .catch((err) => console.log(err));
   };
 
-  console.log(product.flavors)
-
   const Flavors = () => {
     return (
       <div>
         {product?.flavors.map((flavor) => (
-          <span>{flavor},</span>
+          <span key={flavor}>{flavor},</span>
         ))}
       </div>
     );
   };
 
+  const handleAddToCart = () => {
+    const foundCartItem = cart.find((item) => item.id === product.id);
+
+    if (foundCartItem) {
+      const updatedCart = cart.map((item) => {
+        const updatedQuantity = item.quantity + 1;
+        const updatedTotalPrice = updatedQuantity * price;
+        if (item.id === product.id) {
+          return {
+            ...item,
+            quantity: updatedQuantity,
+            totalPrice: updatedTotalPrice,
+          };
+        }
+
+        return item;
+      });
+
+      setCart(updatedCart);
+      toast.success(`${product.name} quantity updated successfully`);
+      return;
+    }
+
+    setCart([
+      ...cart,
+      {
+        ...product,
+        quantity: 1,
+        totalPrice: price,
+      },
+    ]);
+
+    toast.success(`${product.name} added to cart successfully`);
+  };
+
   return (
-    <Card key={product.id} className="col-3 p-0">
+    <Card key={product.id} className="col-3 p-0 pb-5 tw-relative">
       <Card.Img
         variant="top"
         className="tw-w-full tw-h-[300px]"
@@ -75,7 +117,14 @@ const ProductItem = ({ product, setProducts, products }) => {
           </div>
         </Card.Text>
         <div>
-          <Button variant="success">Add to cart</Button>
+          <Button
+            className="tw-absolute tw-bottom-[20px] tw-left-[50%] tw-translate-x-[-50%]"
+            onClick={handleAddToCart}
+            variant="success"
+          >
+            Add to cart
+          </Button>
+          {isItemInCart && `Quantity in cart : ${isItemInCart.quantity}`}
         </div>
       </Card.Body>
     </Card>
