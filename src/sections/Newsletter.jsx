@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const Newsletter = () => {
   const [userEmail, setUserEmail] = useState("");
 
   const handleSubscribe = () => {
     //Email validation and subscribe logic
-    console.log(userEmail);
+    if (userEmail === "") return;
+    toast.success("Newsletter subscribed successfully");
+    return;
   };
 
   return (
@@ -19,7 +22,7 @@ const Newsletter = () => {
       </p>
       <div className="tw-flex tw-items-center tw-gap-1.5">
         <input
-          type="text"
+          type="email"
           className="tw-p-3 tw-w-[394px] tw-rounded-none"
           placeholder="email@gmail.com"
           onChange={(e) => setUserEmail(e.target.value)}
@@ -28,7 +31,7 @@ const Newsletter = () => {
         <button
           type="button"
           onClick={handleSubscribe}
-          className="tw-py-3 tw-px-6 tw-rounded-none tw-bg-green-500 tw-border tw-border-black tw-text-black hover:tw-bg-white active:tw-opacity-50 tw-hover:tw-opacity-50 tw-font-medium"
+          className="tw-py-3 tw-px-6 tw-rounded-none tw-bg-green-500 tw-border tw-border-black tw-text-white hover:tw-bg-green-300 active:tw-opacity-50 tw-hover:tw-opacity-50 tw-font-medium"
         >
           Subscribe
         </button>
