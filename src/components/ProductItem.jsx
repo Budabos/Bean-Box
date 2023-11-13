@@ -20,19 +20,21 @@ const ProductItem = ({ product, setProducts, products }) => {
   const handleLike = () => {
     const updatedLikes = Number(product.likes) + 1;
 
-    // Updating the likes for the product on the server
-    fetch(`http://localhost:8000/products/${product.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        likes: updatedLikes,
-      }),
-    })
+
+    fetch(
+      `https://my-json-server.typicode.com/Budabos/Bean-Box/products/${product.id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          likes: updatedLikes,
+        }),
+      }
+    )
       .then((res) => res.json())
       .then((updatedProduct) => {
-        // Updating the local state with the updated product data
         const updatedProducts = products.map((item) => {
           if (item.id === product.id) {
             return updatedProduct;

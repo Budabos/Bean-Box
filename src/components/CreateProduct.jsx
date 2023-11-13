@@ -16,16 +16,18 @@ const CreateProduct = ({ products, setProducts }) => {
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-
+    console.log(formData)
     // Sending a POST request to create a new product
-    fetch("http://localhost:8000/products", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
+    fetch(
+      "https://my-json-server.typicode.com/Budabos/Bean-Box/products/products",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         // Updating the local state with the new product data
@@ -76,7 +78,63 @@ const CreateProduct = ({ products, setProducts }) => {
         </div>
         {/* ... Repeat similar form fields for other attributes ... */}
         <div className="form-group">
-          <label htmlFor="category">Category</label>
+
+          <label htmlFor="recipe">Recipe</label>
+          <input
+            type="text"
+            className="form-control"
+            id="recipe"
+            name="recipe"
+            placeholder="To make a cup of [product] coffee, grind Arabica coffee beans"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="image">Image</label>
+          <input
+            type="text"
+            className="form-control"
+            id="image"
+            name="image"
+            placeholder="https://cdn.accentuate.io/557828603966/1677786404629/Our-Coffee-Ethiopia-tabletop-production-916W-578-2x.jpg?v=1692634350716"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="likes">Likes</label>
+          <input
+            type="text"
+            className="form-control"
+            id="likes"
+            name="likes"
+            placeholder="150"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="flavor">Flavor</label>
+          <input
+            type="text"
+            className="form-control"
+            id="flavor"
+            name="flavor"
+            placeholder="Vanilla, Caramel, Hazelnut"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="price">Price</label>
+          <input
+            type="text"
+            className="form-control"
+            id="price"
+            name="price"
+            placeholder="1500"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="recipe">Category</label>
           <select
             className="form-control"
             id="category"
