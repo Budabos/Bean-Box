@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ContactUs = () => {
@@ -16,9 +16,9 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
+    // Add the form submission
     console.log("Form submitted:", formData);
-    // Reset the form fields
+    // Reset the forms
     setFormData({
       name: "",
       number: "",
@@ -55,7 +55,7 @@ const ContactUs = () => {
                   <strong>
                     Email:
                     <br />
-                    e.student@moringaschool.com
+                    software.student@moringaschool.com
                   </strong>
                 </address>
               </div>
@@ -101,7 +101,7 @@ const ContactUs = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="mb-3">
                       <label htmlFor="email" className="form-label">
                         Email
@@ -119,7 +119,7 @@ const ContactUs = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-6 col-sm-6">
+                  <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="mb-3">
                       <label htmlFor="subject" className="form-label">
                         Subject
