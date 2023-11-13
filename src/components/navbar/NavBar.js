@@ -25,7 +25,7 @@ const NavBar = () => {
           <NavLinkItem text="Contact us" redirect={"/contact-us"} />
         </ul>
         <div className="lst">
-          <ul className="navbar-lst tw-flex tw-items-center tw-gap-4 tw-relative">
+          <ul className="navbar-lst tw-flex tw-items-center tw-gap-2 tw-relative">
             <SearchBar showSearch={showSearch} />
             <NavItem
               icon={<IoSearchOutline size={20} />}
@@ -34,7 +34,6 @@ const NavBar = () => {
             <NavItem
               icon={<BsCart4 className="tw-overflow-visible" size={20} />}
             />
-            {/* <NavItem icon={<VscMenu size={20}/>} /> */}
           </ul>
         </div>
       </nav>

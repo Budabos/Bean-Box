@@ -29,11 +29,9 @@ const Footer = () => {
             <Link
               key={value}
               to={value}
-              className="tw-text-black tw-no-underline tw-overflow-hidden tw-relative after:tw-absolute after:tw-content-[''] after:tw-bottom-[0px] after:tw-w-full after:tw-h-[2px] after:tw-bg-black after:tw-scale-0 hover:after:tw-scale-100 after:tw-transition-all"
+              className="tw-text-black hover:tw-text-black tw-no-underline tw-overflow-hidden tw-relative after:tw-absolute after:tw-content-[''] after:tw-bottom-[0px] after:tw-w-full after:tw-h-[2px] after:tw-bg-black after:tw-scale-0 hover:after:tw-scale-100 after:tw-transition-all"
             >
-              <li>
-                {text}
-              </li>
+              <li>{text}</li>
             </Link>
           ))}
         </ul>

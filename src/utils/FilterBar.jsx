@@ -23,6 +23,7 @@ const FilterBar = ({ filterBy, setFilterBy }) => {
         {options.map(({ name, value }) => (
           <button
             type="button"
+            key={value}
             class={`btn btn-outline-primary ${
               filterBy === value ? "active" : ""
             }`}
