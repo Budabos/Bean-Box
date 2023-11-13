@@ -1,19 +1,19 @@
 .about-img {
-  background-image: url(../images/woman-2346309_1920.jpg);
+  background-image: url(../../public/woman-2346309_1920.jpg);
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat;
   height: 250px;
 }
 .vision-img {
-  background-image: url(../images/coffee-3076962_1280.jpg);
+  background-image: url(../../public/coffee-3076962_1280.jpg);
   background-size: cover; /* Adjust as needed */
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
 }
 .mission-img {
-  background-image: url(../images/coffee-3923897_1280.jpg);
+  background-image: url(../../public/coffee-3923897_1280.jpg);
   background-size: cover; /* Adjust as needed */
   background-position: center;
   background-repeat: no-repeat;
