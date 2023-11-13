@@ -28,7 +28,7 @@ const Newsletter = () => {
         <button
           type="button"
           onClick={handleSubscribe}
-          className="tw-py-3 tw-px-6 tw-rounded-none tw-bg-white tw-border tw-border-black tw-text-black tw-hover:tw-bg-white tw-hover:tw-opacity-50 tw-font-medium"
+          className="tw-py-3 tw-px-6 tw-rounded-none tw-bg-green-500 tw-border tw-border-black tw-text-black hover:tw-bg-white active:tw-opacity-50 tw-hover:tw-opacity-50 tw-font-medium"
         >
           Subscribe
         </button>
