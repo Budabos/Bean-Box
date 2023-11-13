@@ -12,8 +12,6 @@ const ProductItem = ({ product, setProducts, products }) => {
 
   const isItemInCart = cart.find((item) => item.id === product.id);
 
-  // console.log("cart", cart);
-
   const handleLike = () => {
     const updatedLikes = Number(product.likes) + 1;
 
@@ -28,7 +26,6 @@ const ProductItem = ({ product, setProducts, products }) => {
     })
       .then((res) => res.json())
       .then((updatedProduct) => {
-        {
           const updatedProducts = products.map((item) => {
             if (item.id === product.id) {
               return updatedProduct;
@@ -39,7 +36,7 @@ const ProductItem = ({ product, setProducts, products }) => {
           setProducts(updatedProducts);
 
           toast.success(`${product.name} liked`);
-        }
+        
       })
       .catch((err) => console.log(err));
   };
@@ -97,7 +94,7 @@ const ProductItem = ({ product, setProducts, products }) => {
         src={product.image}
       />
       <Card.Body className="p-4">
-        <Card.Title className="tw-text-center">{product.name}</Card.Title>
+        <Card.Title className="tw-text-center tw-overflow-hidden">{product.name}</Card.Title>
         <Card.Text>
           <div className="tw-text-center">{product.category}</div>
           <br />

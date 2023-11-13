@@ -26,8 +26,12 @@ const Footer = () => {
         <Logo />
         <ul className="tw-flex tw-items-center tw-text-[16px] tw-leading-[24px] tw-font-semibold tw-gap-8">
           {links.map(({ text, value }) => (
-            <Link key={value} to={value}>
-              <li className="tw-cursor-pointer tw-text-black tw-no-underline tw-capitalize tw-hover:tw-text-black-400">
+            <Link
+              key={value}
+              to={value}
+              className="tw-text-black tw-no-underline tw-overflow-hidden tw-relative after:tw-absolute after:tw-content-[''] after:tw-bottom-[0px] after:tw-w-full after:tw-h-[2px] after:tw-bg-black after:tw-scale-0 hover:after:tw-scale-100 after:tw-transition-all"
+            >
+              <li>
                 {text}
               </li>
             </Link>
