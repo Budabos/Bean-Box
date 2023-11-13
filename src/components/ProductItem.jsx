@@ -15,28 +15,30 @@ const ProductItem = ({ product, setProducts, products }) => {
   const handleLike = () => {
     const updatedLikes = Number(product.likes) + 1;
 
-    fetch(`http://localhost:8000/products/${product.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        likes: updatedLikes,
-      }),
-    })
+    fetch(
+      `https://my-json-server.typicode.com/Budabos/Bean-Box/products/${product.id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          likes: updatedLikes,
+        }),
+      }
+    )
       .then((res) => res.json())
       .then((updatedProduct) => {
-          const updatedProducts = products.map((item) => {
-            if (item.id === product.id) {
-              return updatedProduct;
-            }
+        const updatedProducts = products.map((item) => {
+          if (item.id === product.id) {
+            return updatedProduct;
+          }
 
-            return item;
-          });
-          setProducts(updatedProducts);
+          return item;
+        });
+        setProducts(updatedProducts);
 
-          toast.success(`${product.name} liked`);
-        
+        toast.success(`${product.name} liked`);
       })
       .catch((err) => console.log(err));
   };
@@ -94,7 +96,9 @@ const ProductItem = ({ product, setProducts, products }) => {
         src={product.image}
       />
       <Card.Body className="p-4">
-        <Card.Title className="tw-text-center tw-overflow-hidden">{product.name}</Card.Title>
+        <Card.Title className="tw-text-center tw-overflow-hidden">
+          {product.name}
+        </Card.Title>
         <Card.Text>
           <div className="tw-text-center">{product.category}</div>
           <br />

@@ -19,7 +19,7 @@ import Logo from "./components/Logo";
 function App() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/products")
+    fetch("https://my-json-server.typicode.com/Budabos/Bean-Box/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));

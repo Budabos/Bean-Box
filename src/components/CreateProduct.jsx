@@ -15,13 +15,16 @@ const CreateProduct = ({ products, setProducts }) => {
     e.preventDefault();
     console.log(formData);
 
-    fetch("http://localhost:8000/products", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
+    fetch(
+      "https://my-json-server.typicode.com/Budabos/Bean-Box/products/products",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         setProducts([...products, data]);
