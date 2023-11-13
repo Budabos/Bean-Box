@@ -16,15 +16,7 @@ const NavBar = () => {
         <div>
           <ul className="app__navbar-links">
             {[
-              <NavLinkItem
-                products="products"
-                links={
-                  <>
-                    <a href="#">Coffee beans</a>
-                    <a href="#">Coffee Drink</a>
-                  </>
-                }
-              />,
+              <NavLinkItem products="products" />,
               <NavLinkItem products="Store" />,
               <NavLinkItem products="About us" />,
               <NavLinkItem products="Stories" />,
