@@ -5,15 +5,21 @@ import { BsFillSuitHeartFill } from "react-icons/bs";
 import toast from "react-hot-toast";
 import { CartContext } from "../context/cartContext";
 
+// ProductItem Component
 const ProductItem = ({ product, setProducts, products }) => {
+  // Context for managing the cart state
   const { cart, setCart } = useContext(CartContext);
 
+  // Extracting price from the product data
   const price = Number(product.price.split(" ")[1]);
 
+  // Checking if the item is already in the cart
   const isItemInCart = cart.find((item) => item.id === product.id);
 
+  // Function to handle the "Like" button click
   const handleLike = () => {
     const updatedLikes = Number(product.likes) + 1;
+
 
     fetch(
       `https://my-json-server.typicode.com/Budabos/Bean-Box/products/${product.id}`,
@@ -38,11 +44,13 @@ const ProductItem = ({ product, setProducts, products }) => {
         });
         setProducts(updatedProducts);
 
+        // Showing a success toast notification
         toast.success(`${product.name} liked`);
       })
       .catch((err) => console.log(err));
   };
 
+  // Component for displaying flavors
   const Flavors = () => {
     return (
       <div>
@@ -53,10 +61,12 @@ const ProductItem = ({ product, setProducts, products }) => {
     );
   };
 
+  // Function to handle adding the product to the cart
   const handleAddToCart = () => {
     const foundCartItem = cart.find((item) => item.id === product.id);
 
     if (foundCartItem) {
+      // Updating quantity and total price if the item is already in the cart
       const updatedCart = cart.map((item) => {
         const updatedQuantity = item.quantity + 1;
         const updatedTotalPrice = updatedQuantity * price;
@@ -71,11 +81,15 @@ const ProductItem = ({ product, setProducts, products }) => {
         return item;
       });
 
+      // Setting the updated cart state
       setCart(updatedCart);
+
+      // Showing a success toast notification
       toast.success(`${product.name} quantity updated successfully`);
       return;
     }
 
+    // Adding the product to the cart with quantity and total price
     setCart([
       ...cart,
       {
@@ -85,9 +99,11 @@ const ProductItem = ({ product, setProducts, products }) => {
       },
     ]);
 
+    // Showing a success toast notification
     toast.success(`${product.name} added to cart successfully`);
   };
 
+  // Rendering the product card
   return (
     <Card key={product.id} className="col-3 p-0 pb-5 tw-relative">
       <Card.Img
@@ -132,4 +148,5 @@ const ProductItem = ({ product, setProducts, products }) => {
   );
 };
 
+// Exporting the ProductItem component
 export default ProductItem;
