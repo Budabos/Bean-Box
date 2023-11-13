@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
+// CreateProduct Component
 const CreateProduct = ({ products, setProducts }) => {
+  // State to manage form data
   const [formData, setFormData] = useState({
     name: "",
     recipe: "",
@@ -10,11 +11,11 @@ const CreateProduct = ({ products, setProducts }) => {
     image: "",
     category: "beans",
   });
-
+// Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-
+// Sending a POST request to create a new product
     fetch("http://localhost:8000/products", {
       method: "POST",
       headers: {
@@ -24,7 +25,9 @@ const CreateProduct = ({ products, setProducts }) => {
     })
       .then((res) => res.json())
       .then((data) => {
+        // Updating the local state with the new product data
         setProducts([...products, data]);
+        // Resetting the form data after submission
         setFormData({
           name: "",
           recipe: "",
@@ -37,19 +40,20 @@ const CreateProduct = ({ products, setProducts }) => {
       })
       .catch((err) => console.log(err));
   };
-
+// Function to handle form input changes
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-
+ // Updating the form data based on user input
     setFormData((prev) => {
+      
       return {
         ...prev,
         [name]: value,
       };
     });
   };
-
+// Rendering the form for creating a new product
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-gap-[15px]">
       <h2 className="tw-text-center tw-font-edu tw-font-bold tw-overflow-hidden">
@@ -147,5 +151,5 @@ const CreateProduct = ({ products, setProducts }) => {
     </div>
   );
 };
-
+// Exporting the CreateProduct component
 export default CreateProduct;
