@@ -8,7 +8,7 @@ Welcome to Bean Box, the ultimate destination for coffee lovers. Whether you're 
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Getting Started] (#getting-started)
+- [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Technologies](#Technologies)
 - [Author](#author)
@@ -111,7 +111,7 @@ Caroline Akinyi Opiyo ("https://github.com/Budabos")
 
 IanGichane ("https://github.com/IanGichane")
 
-John Mbela ("https://github.com/jmbeba")
+John Mbeba ("https://github.com/jmbeba")
 
 Ruth M. ("https://github.com/RuthM-K")
 
