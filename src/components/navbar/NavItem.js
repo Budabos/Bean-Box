@@ -3,9 +3,8 @@ import { CartContext } from "../../context/cartContext";
 import { Button, Modal } from "react-bootstrap";
 import { BsTrash } from "react-icons/bs";
 
-const NavItem = ({ icon }) => {
+const NavItem = ({ icon, setShowSearch }) => {
   const { cart, setCart } = useContext(CartContext);
-  console.log(cart);
 
   const [show, setShow] = useState(false);
 
@@ -48,8 +47,8 @@ const NavItem = ({ icon }) => {
     <li className={`nav-icon-item `}>
       <div className="tw-relative tw-cursor-pointer">
         {icon.type.name === "BsCart4" && cart.length !== 0 && (
-          <div className="tw-absolute tw-pointer-events-none tw-z-10  tw-bottom-0 tw-right-0 tw-w-4 tw-h-4 tw-bg-white tw-rounded-full tw-flex tw-items-center tw-justify-center">
-            <span className="tw-text-sm">{cart.length}</span>
+          <div className="tw-absolute tw-pointer-events-none tw-z-10 tw-bottom-[0.125rem] tw-right-[0.12rem] tw-p-[0.125rem] tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white">
+            <div className=" tw-bg-black tw-h-1.5 tw-w-1.5 tw-rounded-full tw-flex tw-items-center tw-justify-center" />
           </div>
         )}
         {icon.type.name === "BsCart4" ? (
@@ -72,7 +71,6 @@ const NavItem = ({ icon }) => {
                       <div className="tw-grid tw-grid-cols-3 tw-flex-1 tw-items-center">
                         <span className="tw-ml-[17px]">{item.name}</span>
                         <span className="tw-ml-[20px]">{item.price}</span>
-                        {/* <span className="tw-ml-[20px]">x{item.quantity}</span> */}
                         <input
                           className="tw-ml-[20px] tw-w-[70px]"
                           type="number"
@@ -91,7 +89,9 @@ const NavItem = ({ icon }) => {
                   <div>No items in cart</div>
                 )}
                 <div className="tw-mt-8">
-                  <h4>Subtotal : Ksh.{subTotal}</h4>
+                  <h4 className="tw-overflow-hidden">
+                    Subtotal : Ksh.{subTotal}
+                  </h4>
                 </div>
               </Modal.Body>
               <Modal.Footer className="tw-flex tw-items-center tw-justify-center">
@@ -105,6 +105,8 @@ const NavItem = ({ icon }) => {
               </Modal.Footer>
             </Modal>
           </>
+        ) : icon.type.name === "IoSearchOutline" ? (
+          <div onClick={() => setShowSearch((prev) => !prev)}>{icon}</div>
         ) : (
           <div>{icon}</div>
         )}
