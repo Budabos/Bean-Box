@@ -46,16 +46,13 @@ const CreateProduct = ({ products, setProducts }) => {
 
   // Function to handle form input changes
   const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
+    const { name, value } = e.target;
 
     // Updating the form data based on user input
-    setFormData((prev) => {
-      return {
-        ...prev,
-        [name]: value,
-      };
-    });
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   // Rendering the form for creating a new product
