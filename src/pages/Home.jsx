@@ -10,7 +10,7 @@ const Home = ({ products, setProducts }) => {
   return (
     <>
       <Hero />
-      <h2 className="tw-font-edu tw-font-bold">Pick Your Favourite</h2>
+      <h2 className="tw-mt-10 tw-font-edu tw-font-bold">Pick Your Favourite</h2>
       <ProductsList products={renderedProducts} setProducts={setProducts} />
       <Newsletter />
     </>

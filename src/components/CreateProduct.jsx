@@ -52,7 +52,7 @@ const CreateProduct = ({ products, setProducts }) => {
 
   return (
     <div className="tw-flex tw-flex-col tw-items-center tw-gap-[15px]">
-      <h2 className="tw-text-center tw-font-edu tw-font-bold">
+      <h2 className="tw-text-center tw-font-edu tw-font-bold tw-overflow-hidden">
         Create a product
       </h2>
       <form className="tw-w-1/3">

@@ -44,7 +44,7 @@ function Hero() {
                 className="tw-w-full tw-h-[76vh] tw-aspect-auto"
               />
               <Carousel.Caption className="tw-flex tw-absolute tw-top-1/2 tw-translate-y-[-50%] tw-flex-col tw-items-start">
-                <h1 className="tw-text-[64px]">{hero.title}</h1>
+                <h1 className="tw-text-[64px] tw-overflow-hidden">{hero.title}</h1>
                 <p className="tw-text-[21px] tw-text-left">
                   {hero.description}
                 </p>
@@ -52,7 +52,6 @@ function Hero() {
             </Carousel.Item>
           ))}
         </Carousel>
-            
       </section>
     </section>
   );

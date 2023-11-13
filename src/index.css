@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  overflow-x: hidden;
-}
 
 body {
   margin: 0;
@@ -29,7 +26,12 @@ code {
   --border-radius: 8px;
   --speed: 500ms;
 }
-ul {
+
+ul{
+  list-style: none;
+}
+
+/* ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -186,7 +188,7 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
+} */
 
 .form-control {
   overflow: hidden;
