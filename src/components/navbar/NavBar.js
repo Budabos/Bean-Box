@@ -24,17 +24,6 @@ const NavBar = () => {
             ].map((item) => (
               <li key={`link-${item}`}>
                 <a href={`#${item}`}>{item}</a>
-              <NavLinkItem
-                products="products"
-                redirect={'/products'}
-            
-              />,
-              <NavLinkItem products="Store" redirect={'/products'}/>,
-              <NavLinkItem products="About us" redirect={'/about-us'}/>,
-              <NavLinkItem products="Stories" redirect={'/about-us'}/>,
-            ].map((item, index) => (
-              <li key={`link-${index}`}>
-                <a href={`#${index}`}>{item}</a>
               </li>
             ))}
           </ul>
