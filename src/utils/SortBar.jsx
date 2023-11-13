@@ -18,7 +18,7 @@ const SortBar = ({ sortBy, setSortBy }) => {
 
   return (
     <div className="tw-flex tw-items-center tw-gap-5">
-      <h3>Sort by: </h3>
+      <h3 className="tw-overflow-hidden">Sort by: </h3>
       <div class="btn-group" role="group" aria-label="Basic example">
         {options.map(({ name, value }) => (
           <button

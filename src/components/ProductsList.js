@@ -11,7 +11,7 @@ function ProductsList({ products, setProducts }) {
   );
 
   return (
-    <div className="tw-px-8 tw-mb-10 row row-gap-4 column-gap-4 justify-content-center ">
+    <div className="tw-pl-8 tw-mb-10 row row-gap-4 column-gap-4 justify-content-center ">
       {renderedProducts.map((product) => (
         <ProductItem
           key={product.id}
