@@ -5,7 +5,7 @@ const SearchBar = () => {
     const { searchText, setSearchText } = useContext(CartContext);
     
   return (
-    <input type='text' value={searchText} onChange={(e) => setSearchText(e.target.value)}/>
+    <input className='tw-p-0' type='text' value={searchText} onChange={(e) => setSearchText(e.target.value)}/>
   )
 }
 

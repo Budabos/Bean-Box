@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
+* {
   overflow-x: hidden;
-} */
+}
 
 body {
   margin: 0;
@@ -46,7 +46,7 @@ a {
 .navbar {
   height: var(--nav-size);
   background-color: var(--bg);
-  padding: 0 1rem;
+  padding-bottom: 1rem;
   border-bottom: var(--border);
   display: flex;
   justify-content: space-between;
@@ -186,4 +186,10 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.form-control {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
