@@ -145,7 +145,6 @@ a {
   justify-content: center;
 }
 
-/* Login.css */
 .login-container {
   width: 300px;
   margin: 0 auto;
@@ -183,7 +182,7 @@ button {
 
 button:hover {
   background-color: #0056b3;
-} */
+}
 
 .form-control {
   overflow: hidden;
