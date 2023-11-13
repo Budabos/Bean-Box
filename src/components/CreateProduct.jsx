@@ -15,7 +15,7 @@ const CreateProduct = ({ products, setProducts }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-// Sending a POST request to create a new product
+    // Sending a POST request to create a new product
     fetch("http://localhost:8000/products", {
       method: "POST",
       headers: {
@@ -40,7 +40,7 @@ const CreateProduct = ({ products, setProducts }) => {
       })
       .catch((err) => console.log(err));
   };
-// Function to handle form input changes
+  // Function to handle form input changes
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
