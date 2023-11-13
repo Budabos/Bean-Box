@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Fragment } from "react";
 
 const AboutUs = () => {
   return (
@@ -31,6 +33,6 @@ const AboutUs = () => {
       </section>
     </Fragment>
   );
-}
+};
 
-export default AboutUs
+export default AboutUs;

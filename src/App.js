@@ -13,6 +13,7 @@ import NavBar from "./components/navbar/NavBar";
 import NavItem from "./components/navbar/NavItem";
 import NavLogo from "./components/navbar/NavLogo";
 import { Toaster } from "react-hot-toast";
+import Logo from "./components/Logo";
 
 
 function App() {

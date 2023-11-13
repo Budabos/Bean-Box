@@ -117,8 +117,6 @@ Ruth M. ("https://github.com/RuthM-K")
 
 Edwin Rukuno ("https://github.com/erukuno")
 
-Nelson Murithi ("https://github.com/NellieMK65")
-
 
 
 ## Contributing
