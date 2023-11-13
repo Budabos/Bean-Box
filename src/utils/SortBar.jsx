@@ -22,6 +22,7 @@ const SortBar = ({ sortBy, setSortBy }) => {
       <div class="btn-group" role="group" aria-label="Basic example">
         {options.map(({ name, value }) => (
           <button
+            key={value}
             type="button"
             class={`btn btn-outline-primary ${
               sortBy === value ? "active" : ""

@@ -60,7 +60,7 @@ const CreateProduct = ({ products, setProducts }) => {
       </h2>
       <form className="tw-w-1/3">
         <div className="form-group">
-          <label for="name">Name</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             className="form-control"
@@ -71,7 +71,7 @@ const CreateProduct = ({ products, setProducts }) => {
           />
         </div>
         <div className="form-group">
-          <label for="recipe">Recipe</label>
+          <label htmlFor="recipe">Recipe</label>
           <input
             type="text"
             className="form-control"
@@ -82,7 +82,7 @@ const CreateProduct = ({ products, setProducts }) => {
           />
         </div>
         <div className="form-group">
-          <label for="image">Image</label>
+          <label htmlFor="image">Image</label>
           <input
             type="text"
             className="form-control"
@@ -93,7 +93,7 @@ const CreateProduct = ({ products, setProducts }) => {
           />
         </div>
         <div className="form-group">
-          <label for="likes">Likes</label>
+          <label htmlFor="likes">Likes</label>
           <input
             type="text"
             className="form-control"
@@ -104,7 +104,7 @@ const CreateProduct = ({ products, setProducts }) => {
           />
         </div>
         <div className="form-group">
-          <label for="flavor">Flavor</label>
+          <label htmlFor="flavor">Flavor</label>
           <input
             type="text"
             className="form-control"
@@ -115,7 +115,7 @@ const CreateProduct = ({ products, setProducts }) => {
           />
         </div>
         <div className="form-group">
-          <label for="price">Price</label>
+          <label htmlFor="price">Price</label>
           <input
             type="text"
             className="form-control"
@@ -126,7 +126,7 @@ const CreateProduct = ({ products, setProducts }) => {
           />
         </div>
         <div className="form-group">
-          <label for="recipe">Category</label>
+          <label htmlFor="recipe">Category</label>
           <select
             className="form-control"
             id="category"
